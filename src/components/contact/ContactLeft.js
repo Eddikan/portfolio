@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { contactImg } from "../../assets/index";
 
@@ -19,12 +19,19 @@ const ContactLeft = () => {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
           ipsam autem cumque, accusantium dicta odio.
         </p>
-        <p className="text-base text-gray-400 flex items-center gap-2">
+        <a
+        
+        href="tel:+23480"
+        className="text-base text-gray-400 flex items-center gap-2">
           Phone: <span className="text-lightText">+968 97859628</span>
-        </p>
-        <p className="text-base text-gray-400 flex items-center gap-2">
-          Email: <span className="text-lightText">noor.jsdivs@gmail.com</span>
-        </p>
+        </a>
+        <a
+          href="mailto:imeekwere15@gmail.com"
+          target="__blank"
+          className="text-base text-gray-400 flex items-center gap-2"
+        >
+          Email: <span className="text-lightText">imeekwere15@gmail.com</span>
+        </a>
       </div>
       <div className="flex flex-col gap-4">
         <h2 className="text-base uppercase font-titleFont mb-4">Find me in</h2>
@@ -42,6 +49,6 @@ const ContactLeft = () => {
       </div>
     </div>
   );
-}
+};
 
-export default ContactLeft
+export default ContactLeft;
