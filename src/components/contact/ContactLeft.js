@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { contactImg } from "../../assets/index";
 
 const ContactLeft = () => {
@@ -20,10 +20,10 @@ const ContactLeft = () => {
           ipsam autem cumque, accusantium dicta odio.
         </p>
         <a
-        
-        href="tel:+23480"
-        className="text-base text-gray-400 flex items-center gap-2">
-          Phone: <span className="text-lightText">+968 97859628</span>
+          href="tel:+2348023499180"
+          className="text-base text-gray-400 flex items-center gap-2"
+        >
+          Phone: <span className="text-lightText">+080 23499180</span>
         </a>
         <a
           href="mailto:imeekwere15@gmail.com"
@@ -36,15 +36,23 @@ const ContactLeft = () => {
       <div className="flex flex-col gap-4">
         <h2 className="text-base uppercase font-titleFont mb-4">Find me in</h2>
         <div className="flex gap-4">
-          <span className="bannerIcon">
-            <FaFacebookF />
-          </span>
-          <span className="bannerIcon">
-            <FaTwitter />
-          </span>
-          <span className="bannerIcon">
-            <FaLinkedinIn />
-          </span>
+          <a href="https://github.com/Eddikan">
+            <span className="bannerIcon">
+              <FaGithub />
+            </span>
+          </a>
+
+          <a href="https://twitter.com/skinnyeddyy">
+            <span className="bannerIcon">
+              <FaTwitter />
+            </span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/ime-ekwere-552b9b1b3/">
+            <span className="bannerIcon">
+              <FaLinkedinIn />
+            </span>
+          </a>
         </div>
       </div>
     </div>

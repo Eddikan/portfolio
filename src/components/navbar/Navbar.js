@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-// import logo from "../../assets/images/my_pic.jpg";
+import { FaGithub, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import logo from "../../assets/images/new.png";
 
 import { navLinksdata } from "../../constants";
 
@@ -14,18 +14,18 @@ const Navbar = () => {
       <div>
         <Link
           activeClass="active"
-          to={'home'}
+          to={"home"}
           spy={true}
           smooth={true}
           offset={-70}
           duration={500}
           className="cursor-pointer"
         >
-          {/* <img
+          <img
             src={logo}
             alt="logo"
             className="border-4 border-gray-600 rounded-full h-16 w-16"
-          /> */}
+          />
         </Link>
       </div>
       <div>
@@ -90,15 +90,23 @@ const Navbar = () => {
                   Find me in
                 </h2>
                 <div className="flex gap-4">
-                  <span className="bannerIcon">
-                    <FaFacebookF />
-                  </span>
-                  <span className="bannerIcon">
-                    <FaTwitter />
-                  </span>
-                  <span className="bannerIcon">
-                    <FaLinkedinIn />
-                  </span>
+                  <a href="https://github.com/Eddikan">
+                    <span className="bannerIcon">
+                      <FaGithub />
+                    </span>
+                  </a>
+
+                  <a href="https://twitter.com/skinnyeddyy">
+                    <span className="bannerIcon">
+                      <FaTwitter />
+                    </span>
+                  </a>
+
+                  <a href="https://www.linkedin.com/in/ime-ekwere-552b9b1b3/">
+                    <span className="bannerIcon">
+                      <FaLinkedinIn />
+                    </span>
+                  </a>
                 </div>
               </div>
               <span
