@@ -13,12 +13,9 @@ const ContactLeft = () => {
       <div className="flex flex-col gap-4">
         <h3 className="text-3xl font-bold text-white">Ime Ekwere</h3>
         <p className="text-lg font-normal text-gray-400">
-          MERN Stack Developer
+         Frontend Developer
         </p>
-        <p className="text-base text-gray-400 tracking-wide">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
-          ipsam autem cumque, accusantium dicta odio.
-        </p>
+     
         <a
           href="tel:+2348023499180"
           className="text-base text-gray-400 flex items-center gap-2"
@@ -36,19 +33,19 @@ const ContactLeft = () => {
       <div className="flex flex-col gap-4">
         <h2 className="text-base uppercase font-titleFont mb-4">Find me in</h2>
         <div className="flex gap-4">
-          <a href="https://github.com/Eddikan">
+          <a href="https://github.com/Eddikan" target="__blank">
             <span className="bannerIcon">
               <FaGithub />
             </span>
           </a>
 
-          <a href="https://twitter.com/skinnyeddyy">
+          <a href="https://twitter.com/skinnyeddyy" target="__blank">
             <span className="bannerIcon">
               <FaTwitter />
             </span>
           </a>
 
-          <a href="https://www.linkedin.com/in/ime-ekwere-552b9b1b3/">
+          <a href="https://www.linkedin.com/in/ime-ekwere-552b9b1b3/" target="__blank">
             <span className="bannerIcon">
               <FaLinkedinIn />
             </span>

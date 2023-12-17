@@ -1,7 +1,7 @@
-import React,{useState} from 'react'
-import Title from '../layouts/Title';
-import ContactLeft from './ContactLeft';
-
+import React, { useState } from "react";
+import Title from "../layouts/Title";
+import ContactLeft from "./ContactLeft";
+import axios from "axios";
 const Contact = () => {
   const [username, setUsername] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -20,7 +20,9 @@ const Contact = () => {
   // ========== Email Validation end here ================
 
   const handleSend = (e) => {
+
     e.preventDefault();
+    console.log('env',process.env.REACT_APP_BASE_URL)
     if (username === "") {
       setErrMsg("Username is required!");
     } else if (phoneNumber === "") {
@@ -34,6 +36,22 @@ const Contact = () => {
     } else if (message === "") {
       setErrMsg("Message is required!");
     } else {
+      try {
+        
+        const res = axios.post(
+          `${process.env.REACT_APP_BASE_URL}/emails`,
+          {
+            email: email,
+            name: username,
+            phone: phoneNumber,
+            subject: subject,
+            message: message,
+          }
+        );
+        console.log("res", res);
+      } catch (e) {
+      } finally {
+      }
       setSuccessMsg(
         `Thank you dear ${username}, Your Messages has been sent Successfully!`
       );
@@ -94,7 +112,7 @@ const Contact = () => {
                       errMsg === "Phone number is required!" &&
                       "outline-designColor"
                     } contactInput`}
-                    type="text"
+                    type="number"
                   />
                 </div>
               </div>
@@ -164,6 +182,6 @@ const Contact = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Contact
+export default Contact;

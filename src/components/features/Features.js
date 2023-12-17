@@ -15,32 +15,23 @@ const Features = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20">
         <Card
           title="App Development"
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
+          des="I can turn your ideads into reality and create web applications to suit your project and meet your requirements"
           icon={<AiFillAppstore />}
         />
         <Card
           title="SEO Optimisation"
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
+          des="I improving your website to increase its visibility in Google, Microsoft Bing, and other search engines whenever people search for it"
           icon={<SiProgress />}
         />
         <Card
           title="Mobile Development"
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
+          des="I create software applications that run on a mobile device for both Ios/Android"
           icon={<FaMobile />}
         />
-        <Card
-          title="UX Design"
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
-          icon={<SiAntdesign />}
-        />
+
         <Card
           title="Hosting Websites"
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
+          des="Whether it's for personal or business use, i can publish your website files onto the internet. So, anyone who has access to the internet has access to your website."
           icon={<FaGlobe />}
         />
       </div>
