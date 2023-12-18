@@ -34,7 +34,7 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-          As a seasoned frontend developer with 4 years of experience, I bring a
+          A seasoned frontend developer with 4 years of experience, I bring a
           wealth of knowledge and expertise to the table. I specialize in
           building intuitive and visually appealing user interfaces for both web and mobile.
         </p>
@@ -42,7 +42,7 @@ const LeftBanner = () => {
       <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
         <div>
           <h2 className="text-base uppercase font-titleFont mb-4">
-            Find me in
+            Find me on
           </h2>
           <div className="flex gap-4">
             <a href="https://github.com/Eddikan" target="__blank">
@@ -66,7 +66,7 @@ const LeftBanner = () => {
         </div>
         <div>
           <h2 className="text-base uppercase font-titleFont mb-4">
-            BEST SKILL ON
+            BEST SKILLED IN
           </h2>
           <div className="flex flex-wrap md:grid grid-cols-3 gap-4">
             <span className="bannerIcons">
