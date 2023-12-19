@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Title from "../layouts/Title";
 import ContactLeft from "./ContactLeft";
-import axios from "axios";
+import { ADD_RECORD } from "../../config/api";
+
 const Contact = () => {
   const [username, setUsername] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -19,10 +20,9 @@ const Contact = () => {
   };
   // ========== Email Validation end here ================
 
-  const handleSend = (e) => {
-
+  const handleSend = async (e) => {
     e.preventDefault();
-    console.log('env',process.env.REACT_APP_BASE_URL)
+    console.log("env", process.env.REACT_APP_BASE_URL);
     if (username === "") {
       setErrMsg("Username is required!");
     } else if (phoneNumber === "") {
@@ -37,18 +37,20 @@ const Contact = () => {
       setErrMsg("Message is required!");
     } else {
       try {
-        
-        const res = axios.post(
-          `${process.env.REACT_APP_BASE_URL}/emails`,
-          {
-            email: email,
-            name: username,
-            phone: phoneNumber,
-            subject: subject,
-            message: message,
-          }
-        );
-        console.log("res", res);
+        const payload = {
+          email: email,
+          name: username,
+          phone: phoneNumber,
+          subject: subject,
+          message: message,
+        };
+        await ADD_RECORD("emails", payload);
+
+        // const res = axios.post(
+        //   `${process.env.REACT_APP_BASE_URL}/emails`,
+        //   payload
+        // );
+        // console.log("res", res);
       } catch (e) {
       } finally {
       }
@@ -69,7 +71,7 @@ const Contact = () => {
       className="w-full py-20 border-b-[1px] border-b-black"
     >
       <div className="flex justify-center items-center text-center">
-        <Title title="CONTACT" des="Contact With Me" />
+        <Title title="CONTACT" des="Contact  Me" />
       </div>
       <div className="w-full">
         <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">

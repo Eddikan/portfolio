@@ -31,7 +31,7 @@ const Footer = () => {
       </div>
       <div className="w-full h-full">
         <h3 className="text-xl uppercase text-designColor tracking-wider">
-          Quick Link
+          Quick Links
         </h3>
         <ul className="flex flex-col gap-4 font-titleFont font-medium py-6 overflow-hidden">
           {navLinksdata.map(({ _id, title, link }) => (
