@@ -1,6 +1,12 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { FaGithub, FaTwitter, FaLinkedinIn, FaReact } from "react-icons/fa";
+import {
+  FaGithub,
+  FaTwitter,
+  FaLinkedinIn,
+  FaReact,
+  FaEnvelope,
+} from "react-icons/fa";
 import {
   SiTailwindcss,
   SiVuedotjs,
@@ -20,7 +26,7 @@ const LeftBanner = () => {
   return (
     <div className="w-full lgl:w-1/2 flex flex-col gap-20">
       <div className="flex flex-col gap-5">
-        <h4 className=" text-lg font-normal">WELCOME TO MY WORLD.</h4>
+        <h4 className=" text-lg font-normal">WELCOME TO MY WORLD</h4>
         <h1 className="text-6xl font-bold text-white">
           Hi, I'm{" "}
           <span className="text-designColor capitalize">Ime Ekwere</span>
@@ -34,9 +40,10 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-          A seasoned frontend developer with 4 years of experience, I bring a
+          A seasoned frontend developer with 5 years of experience, I bring a
           wealth of knowledge and expertise to the table. I specialize in
-          building intuitive and visually appealing user interfaces for both web and mobile.
+          building intuitive and visually appealing user interfaces for both web
+          and mobile.
         </p>
       </div>
       <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
@@ -44,20 +51,29 @@ const LeftBanner = () => {
           <h2 className="text-base uppercase font-titleFont mb-4">
             Find me on
           </h2>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="mailto:imeekwere15@gmail.com?subject=Hello%20there%20Ime&body=I%20would%20like%20to%20connect."
+              target="__blank"
+            >
+              <span className="bannerIcon">
+                <FaEnvelope />
+              </span>
+            </a>
             <a href="https://github.com/Eddikan" target="__blank">
               <span className="bannerIcon">
                 <FaGithub />
               </span>
             </a>
-
             <a href="https://twitter.com/skinnyeddyy" target="__blank">
               <span className="bannerIcon">
                 <FaTwitter />
               </span>
             </a>
-
-            <a href="https://www.linkedin.com/in/ime-ekwere-552b9b1b3/" target="__blank">
+            <a
+              href="https://www.linkedin.com/in/ime-ekwere-552b9b1b3/"
+              target="__blank"
+            >
               <span className="bannerIcon">
                 <FaLinkedinIn />
               </span>
