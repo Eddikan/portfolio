@@ -19,7 +19,7 @@ const Contact = () => {
       .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
   };
   // ========== Email Validation end here ================
-
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const handleSend = async (e) => {
     e.preventDefault();
     console.log("env", process.env.REACT_APP_BASE_URL);
@@ -37,6 +37,7 @@ const Contact = () => {
       setErrMsg("Message is required!");
     } else {
       try {
+        setIsSubmitting(true);
         const payload = {
           email: email,
           name: username,
@@ -45,24 +46,25 @@ const Contact = () => {
           message: message,
         };
         await ADD_RECORD("emails", payload);
-
+        setSuccessMsg(
+          `Thank you dear ${username}, Your Messages has been sent Successfully! I will reach out to you soon`
+        );
+        setUsername("");
+        setPhoneNumber("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
         // const res = axios.post(
         //   `${process.env.REACT_APP_BASE_URL}/emails`,
         //   payload
         // );
         // console.log("res", res);
       } catch (e) {
+        console.log("error", e);
+        setErrMsg(e);
       } finally {
+        setIsSubmitting(false);
       }
-      setSuccessMsg(
-        `Thank you dear ${username}, Your Messages has been sent Successfully!`
-      );
-      setErrMsg("");
-      setUsername("");
-      setPhoneNumber("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
     }
   };
   return (
@@ -163,9 +165,16 @@ const Contact = () => {
               <div className="w-full">
                 <button
                   onClick={handleSend}
+                  disabled={isSubmitting}
                   className="w-full h-12 bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase hover:text-white duration-300 hover:border-[1px] hover:border-designColor border-transparent"
                 >
-                  Send Message
+                  {isSubmitting ? (
+                    <div class="flex justify-center items-center">
+                      <div class="w-4 h-4 border-4 border-dashed rounded-full animate-spin border-blue-500"></div>
+                    </div>
+                  ) : (
+                    "Send Message"
+                  )}
                 </button>
               </div>
               {errMsg && (
