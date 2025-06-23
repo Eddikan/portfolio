@@ -37,6 +37,7 @@ const Contact = () => {
       setErrMsg("Message is required!");
     } else {
       try {
+        
         setIsSubmitting(true);
         const payload = {
           email: email,
