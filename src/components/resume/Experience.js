@@ -11,13 +11,25 @@ const Experience = () => {
     >
       <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2019 - 2023</p>
+          <p className="text-sm text-designColor tracking-[4px]">2019 - Present</p>
           <h2 className="text-3xl md:text-4xl font-bold">Job Experience</h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full  border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
+            title="Frontend Engineer"
+            subTitle="Chisquares Complex surveys - Feb 2025 - Present"
+            result="Atlanta, USA"
+            des="Built embeddable React chat widget with multilingual AI support, documentation portal with RBAC, and admin portal with SignalR real-time notifications."
+          />
+          <ResumeCard
+            title="Lead Frontend Engineer"
+            subTitle="Kouture Konect Fashion Ecommerce - July 2024 - Feb 2025"
+            result="Texas, USA"
+            des="Migrated legacy stack to React + Vite, reducing reload time from 8s to 0.2s. Led SEO and performance optimization, achieving Google Lighthouse score of 90+. Built video consultation, P2P messaging, and invoicing tools in a tailored fashion/fintech UI. Collaborated with stakeholders and led sprint planning for 6+ frontend devs."
+          />
+          <ResumeCard
             title="Web and mobile Engineer -remote"
-            subTitle="Eazipay - 03/03/2023 - present"
+            subTitle="Eazipay - 03/03/2023 - Nov 2024"
             result="Nigeria"
             des=" My work as a mobile and frontend developer in this company directly impacts how people manage their finances and investments. This can be personally rewarding, knowing that your work is making a real difference in users' lives."
           />

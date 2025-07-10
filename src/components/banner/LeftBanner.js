@@ -43,7 +43,7 @@ const LeftBanner = () => {
           A seasoned frontend developer with 5 years of experience, I bring a
           wealth of knowledge and expertise to the table. I specialize in
           building intuitive and visually appealing user interfaces for both web
-          and mobile.
+          and mobile. I design, I develop, I make. I made this!
         </p>
       </div>
       <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">

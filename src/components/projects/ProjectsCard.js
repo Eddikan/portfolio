@@ -19,13 +19,13 @@ const ProjectsCard = ({ title, des, src, website, gitUrl }) => {
               {title}
             </h3>
             <div className="flex gap-2">
-              {gitUrl && (
+              {/* {false && (
                 <a href={gitUrl ? gitUrl : ""} target="__blank">
                   <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
                     <BsGithub />
                   </span>
                 </a>
-              )}
+              )} */}
 
               <a href={website ? website : ""} target="__blank">
                 <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">

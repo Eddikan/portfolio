@@ -111,7 +111,7 @@ const Testimonial = () => {
                   </p>
                   {/* <h3 className="text-2xl font-bold">Jone Duone Joe</h3> */}
                   <p className="text-base tracking-wide text-gray-500">
-                    Operation Officer
+                   Chief Operation Officer - FarmTech
                   </p>
                 </div>
               </div>
@@ -161,7 +161,7 @@ const Testimonial = () => {
                   </p>
                   {/* <h3 className="text-2xl font-bold">Jone Duoness Joe</h3> */}
                   <p className="text-base tracking-wide text-gray-500">
-                    Operation Officer
+                    Chief Operation Officer - Admoni
                   </p>
                 </div>
               </div>
