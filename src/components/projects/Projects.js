@@ -12,16 +12,16 @@ const Projects = () => {
       <div className="flex justify-center items-center text-center">
         <Title
           title="VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK"
-          des="My Projects"
+          des="Projects and companies i've worked for"
         />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
         <ProjectsCard
-          title="Kouture Konect"
-          des="Global fashion platform connecting fashion enthusiasts with talented designers for custom-made attire and exceptional craftsmanship."
-          src={"https://sandbox.kouturekonect.com/favicon.ico"}
-          website={"https://sandbox.kouturekonect.com/"}
-        />{" "}
+          title="MSDAT"
+          des="The Federal Ministry of Health (FMOH) Nigeria multi source data analysis resource provides a single transparent view of key health indicators against multiple data sources. "
+          src={"https://msdat.fmohconnect.gov.ng/img/Logo-mob.9cc7855d.svg"}
+          website="https://msdat.fmohconnect.gov.ng/"
+        />
         <ProjectsCard
           title="Chisquares"
           des="AI-powered platform that streamlines scientific research planning, execution, and reporting. Helps researchers focus on impactful work by automating evidence synthesis tasks."
@@ -36,17 +36,25 @@ const Projects = () => {
           website="https://www.myeazipay.com/"
         />{" "}
         <ProjectsCard
+          title="Prime Frontier"
+          des="Efficient, AI-powered mining solutions for exploration, operations, and compliance—optimizing resources, sustainability, and returns across the entire mining lifecycle"
+          src={
+            "https://i.postimg.cc/Qdm1nkS4/Screenshot-2025-10-02-at-09-50-20.png"
+          }
+          website="https://primefrontiergroup.com/"
+        />
+        <ProjectsCard
+          title="Kouture Konect"
+          des="Global fashion platform connecting fashion enthusiasts with talented designers for custom-made attire and exceptional craftsmanship."
+          src={"https://sandbox.kouturekonect.com/favicon.ico"}
+          website={"https://sandbox.kouturekonect.com/"}
+        />{" "}
+        <ProjectsCard
           title="Varroe"
           des="Varroe is a premium booking and appointment platform that connects users to the best merchants and freelancers in their area for services including beauty, wellness, fitness, and more."
           src={"https://varroe.com/_next/static/media/logo.dd3b17de.svg"}
           gitUrl="https://github.com/varroe/client-web"
           website="https://varroe.com/"
-        />
-        <ProjectsCard
-          title="MSDAT"
-          des="The Federal Ministry of Health (FMOH) Nigeria multi source data analysis resource provides a single transparent view of key health indicators against multiple data sources. "
-          src={"https://msdat.fmohconnect.gov.ng/img/Logo-mob.9cc7855d.svg"}
-          website="https://msdat.fmohconnect.gov.ng/"
         />
         <ProjectsCard
           title="Slate"

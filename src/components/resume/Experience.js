@@ -16,6 +16,12 @@ const Experience = () => {
         </div>
         <div className="mt-6 lgl:mt-14 w-full  border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
+            title="Backend Developer"
+            subTitle="Prime Frontier Mining Solutions - 2023 - Present"
+            result="Remote"
+            des="Delivering AI-powered mining solutions for exploration, operations, and compliance. Built tools to optimize resource management, sustainability, and project outcomes across the mining lifecycle."
+          />
+          <ResumeCard
             title="Frontend Engineer"
             subTitle="Chisquares Complex surveys - Feb 2025 - Present"
             result="Atlanta, USA"

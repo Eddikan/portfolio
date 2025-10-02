@@ -11,27 +11,31 @@ const Features = () => {
       id="features"
       className="w-full py-20 border-b-[1px] border-b-black"
     >
-      <Title title="Features" des="What I Do" />
+      <Title title="Features" des="What I Do (Frontend & Backend)" />
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20">
         <Card
           title="App Development"
-          des="I can turn your ideas into reality and create web applications to suit your project and meet your requirements"
+          des="I can turn your ideas into reality and create web applications to suit your project and meet your requirements."
           icon={<AiFillAppstore />}
         />
         <Card
+          title="Backend & API Development"
+          des="I build robust backend systems, RESTful APIs, and microservices using Node.js, Express, MongoDB, and PostgreSQL to power modern web and mobile apps."
+          icon={<SiAntdesign />}
+        />
+        <Card
           title="SEO Optimisation"
-          des="I improving your website to increase its visibility in Google, Microsoft Bing, and other search engines whenever people search for it"
+          des="I improve your website to increase its visibility in Google, Microsoft Bing, and other search engines whenever people search for it."
           icon={<SiProgress />}
         />
         <Card
           title="Mobile Development"
-          des="I create software applications that run on a mobile device for both Ios/Android"
+          des="I create software applications that run on a mobile device for both iOS and Android."
           icon={<FaMobile />}
         />
-
         <Card
           title="Hosting Websites"
-          des="Whether it's for personal or business use, i can publish your website files onto the internet. So, anyone who has access to the internet has access to your website."
+          des="Whether it's for personal or business use, I can publish your website files onto the internet so anyone with access to the internet can view your site."
           icon={<FaGlobe />}
         />
       </div>

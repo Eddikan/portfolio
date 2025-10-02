@@ -17,7 +17,7 @@ import {
 
 const LeftBanner = () => {
   const [text] = useTypewriter({
-    words: ["Frontend Developer.", "Mobile Developer."],
+    words: ["Fullstack Engineer.", "Mobile Developer.", "UI/UX Enthusiast."],
     loop: true,
     typeSpeed: 20,
     deleteSpeed: 10,
@@ -40,10 +40,9 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-          A seasoned frontend developer with 5 years of experience, I bring a
+          A seasoned frontend and backend developer with 5 years of experience, I bring a
           wealth of knowledge and expertise to the table. I specialize in
-          building intuitive and visually appealing user interfaces for both web
-          and mobile. I design, I develop, I make. I made this!
+          building intuitive and visually appealing user interfaces for web and mobile, as well as robust backend systems and APIs. I design, I develop, I make. I made this!
         </p>
       </div>
       <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
@@ -102,6 +101,19 @@ const LeftBanner = () => {
             </span>
             <span className="bannerIcons">
               <SiNuxtdotjs />
+            </span>
+            {/* Backend skills */}
+            <span className="bannerIcons">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" style={{ width: 24, height: 24 }} />
+            </span>
+            <span className="bannerIcons">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" style={{ width: 24, height: 24 }} />
+            </span>
+            <span className="bannerIcons">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" style={{ width: 24, height: 24 }} />
+            </span>
+            <span className="bannerIcons">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" style={{ width: 24, height: 24 }} />
             </span>
           </div>
         </div>
